@@ -10,14 +10,14 @@ _Adversarial attacks and the development of (deep) neural networks robust agains
 <https://arxiv.org/abs/1902.00577>
 
 
-#### Using the models
+## Using the models
 Models can be retrieved either as standalone **tensorflow graph** or through the **[foolbox zoo](https://foolbox.readthedocs.io/en/latest/user/zoo.html)**. 
 
 To retrieve the tensorflow graph the `tensorflow_session()` function can be called from the models respective module. In the same method call, the input and output tensors of the graph are returned as well.
 
 To use the models through the foolbox zoo it is required to specify the correct module name (file name) when calling `zoo.get_model()`. This option is only available for foolbox versions `> 1.8.0`.
 
-#### About the models
+## About the models
 All implementation details and evaluation results can be found in the paper. We give the # of prototypes and clean accuracy as well as the obtained worst-case-robustness scores for the models here briefly. We measure the robustness as the worst case median adversarial distance (MAD) and the threshold accuracy (TACC). For details on these measures, see the paper. Higher scores mean higher robustness of the model. The measures here are included for the reader that does not want to jump back and forth between the code and the paper when using our implementation. 
 
 | name | cnn | glvq | glvq_large | gmlvq | gmlvq_large | gtlvq | gtlvq_large |
