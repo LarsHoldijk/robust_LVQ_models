@@ -8,5 +8,5 @@ _Adversarial attacks and the development of (deep) neural networks robust agains
 
 ### Using the models
 Models can be retrieved either as standalone tensorflow graph or through the [foolbox zoo](https://foolbox.readthedocs.io/en/latest/user/zoo.html). To retrieve the tensorflow graph the `tensorflow_session()` function can be called from the models respective module. In the same method call the input and output tensors of the graph are returned as well.
-
+To use the models through the foolbox zoo it is required to specify the correct module name when calling `zoo.get_model()`. This option is only available for foolbox versions `> 1.8.0`.
 
