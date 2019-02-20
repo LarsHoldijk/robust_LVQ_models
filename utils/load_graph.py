@@ -1,4 +1,6 @@
+#!/usr/bin/env python3
 import tensorflow as tf
+
 
 def load_graph(frozen_graph_filename):
     with tf.gfile.GFile(frozen_graph_filename, "rb") as f:
