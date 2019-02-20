@@ -6,7 +6,7 @@ _Adversarial attacks and the development of (deep) neural networks robust agains
 <https://arxiv.org/abs/1902.00577>
 
 
-##Using the models
+### Using the models
 
 Models can be retrieved either as standalone tensorflow sessions or through the [foolbox zoo](https://foolbox.readthedocs.io/en/latest/user/zoo.html). To retrieve the tensorflow session the `tensorflow_session()` function can be called from the models respective module.
 
