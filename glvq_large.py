@@ -16,13 +16,8 @@ def get_graph_and_tensors():
 
     return graph, input, output
 
+
 def create():
     graph, input, output = get_graph_and_tensors()
     fmodel = foolbox.models.TensorFlowModel(input, output, bounds=(0, 255), preprocessing=(0, 255))
     return fmodel
-
-def tensorflow_session():
-    graph, input, output = get_graph_and_tensors()
-    sess = tf.Session(graph=graph)
-    return sess
-
