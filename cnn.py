@@ -15,5 +15,5 @@ def create():
     input = graph.get_tensor_by_name('prefix/input_1:0')
     output = graph.get_tensor_by_name('prefix/dense_2/BiasAdd:0')
 
-    fmodel = foolbox.models.TensorFlowModel(input, output, bounds=(0,1), preprocessing=(0, 255))
+    fmodel = foolbox.models.TensorFlowModel(input, output, bounds=(0,255), preprocessing=(0, 255))
     return fmodel
