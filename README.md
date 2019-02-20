@@ -1,5 +1,5 @@
 # Robustness of Generalized Learning Vector Quantization Models against Adversarial Attacks
-[Sascha Saralajew](https://scholar.google.com/citations?user=YTi93_0AAAAJ&hl=de), [Lars Holdijk](https://github.com/LarsHoldijk/), [Maike Rees](https://github.com/MaikeRees/), [Thomas Villmann](https://scholar.google.com/citations?user=K14cpD8AAAAJ&hl=de)
+[Sascha Saralajew](https://scholar.google.com/citations?user=YTi93_0AAAAJ&hl=de), [Lars Holdijk](https://github.com/LarsHoldijk/), [Maike Rees](https://github.com/Maikefer/), [Thomas Villmann](https://scholar.google.com/citations?user=K14cpD8AAAAJ&hl=de)
 
 In our paper we evaluated the robustness of LVQ (Learning Vector Quantization) models against adversarial attacks on MNIST.
 This repository contains all the models (except the Madry model) that we used for the evaluation. The models are constructed in tensorflow and saved as pb files. We provide methods to read these files and to convert them to foolbox models with the foolbox zoo.  
