@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 import os
 
-import tensorflow as tf
-
 from foolbox import foolbox
 from robust_LVQ_models.utils.load_graph import load_graph
-from robust_LVQ_models.utils.relative_path import relative_path
 
 
 def create():
     filename = os.path.join(os.path.dirname(__file__), 'model_files/cnn.pb')
-    graph = load_graph(relative_path(filename))
+    graph = load_graph(filename)
 
     for op in graph.get_operations():
         print(str(op.name))
