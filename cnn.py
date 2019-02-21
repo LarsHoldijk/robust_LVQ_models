@@ -6,6 +6,8 @@ import tensorflow as tf
 from foolbox import foolbox
 from robust_LVQ_models.utils.load_graph import load_graph
 
+# The baseline CNN with two convolutional and two fully connected layers. 
+# See the paper for more implementation details.
 
 def get_graph_and_tensors():
     filename = os.path.join(os.path.dirname(__file__), 'model_files/cnn.pb')

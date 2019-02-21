@@ -6,6 +6,8 @@ import tensorflow as tf
 from foolbox import foolbox
 from robust_LVQ_models.utils.load_graph import load_graph
 
+# The GTLVQ model with 10 prototypes per class. 
+# See the paper for more implementation details.
 
 def get_graph_and_tensors():
     filename = os.path.join(os.path.dirname(__file__), 'model_files/gtlvq_large.pb')
