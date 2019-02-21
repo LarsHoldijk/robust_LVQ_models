@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-
-from foolbox import foolbox
+import foolbox
 from robust_LVQ_models.models import cnn, glvq, glvq_large, gmlvq, gmlvq_large, gtlvq, gtlvq_large
 
 
