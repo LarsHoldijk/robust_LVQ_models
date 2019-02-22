@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import foolbox
-from robust_LVQ_models.tensorflow_graph import get_tensorflow_graph
+from robust_LVQ_models.get_tensorflow_graph import get_tensorflow_graph
 
 
 def create(model_name, large_model=False):
